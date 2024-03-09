@@ -2,8 +2,8 @@ import React from "react";
 import "@/styles/globals.css";
 import {
   Header,
+  Main,
 } from "@/components";
-import Main from "@/components/ui/common/Main/Main";
 import SiderComponents from "@/components/ui/common/Sider/Sider";
 
 export const metadata = {

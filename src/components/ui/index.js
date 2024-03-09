@@ -33,3 +33,7 @@ export {default as Avatar} from './Avatar'
 export {default as Breadcrumbs} from './Breadcrumbs'
 export {default as Header} from './Header'
 export {default as AccountMenu} from './AccountMenu'
+
+// Main
+
+export {default as Main} from './Main'
