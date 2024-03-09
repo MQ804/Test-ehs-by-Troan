@@ -9,7 +9,7 @@ import FormLabel from "@mui/material/FormLabel";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
-// import api from "@/app/utils/api";
+// import api from "@/components/utils/api";
 
 const AddStudentsForm = () => {
   const [login, setLogin] = useState("");

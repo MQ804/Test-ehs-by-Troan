@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import AddGroupsForm from "@/app/ui/common/groups/add-groups-form";
+import AddGroupsForm from "@/components/ui/common/groups/add-groups-form";
 import Button from "@mui/material/Button";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 

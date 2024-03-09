@@ -18,32 +18,32 @@ const menuItems = [
   {
     title: "Головна",
     icon: <HomeOutlinedIcon style={{ color: "white" }} />,
-    path: "/admin",
+    path: "/",
   },
   {
     title: "Групи",
     icon: <GroupOutlinedIcon style={{ color: "white" }} />,
-    path: "/admin/groups",
+    path: "/groups",
   },
   {
     title: "Студенти",
     icon: <PersonOutlineOutlinedIcon style={{ color: "white" }} />,
-    path: "/admin/students",
+    path: "/students",
   },
   {
     title: "Викладачі",
     icon: <ImportContactsOutlinedIcon style={{ color: "white" }} />,
-    path: "/admin/teachers",
+    path: "/teachers",
   },
   {
     title: "Календар",
     icon: <CalendarTodayOutlinedIcon style={{ color: "white" }} />,
-    path: "/admin/calendar",
+    path: "/calendar",
   },
   {
     title: "Статистика",
     icon: <QueryStatsOutlinedIcon style={{ color: "white" }} />,
-    path: "/admin/stats",
+    path: "/stats",
   },
 ];
 
