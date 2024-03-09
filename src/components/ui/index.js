@@ -27,3 +27,9 @@ export {default as SimpleDialogDemo} from './SimpleDialogDemo'
 export {default as Legend} from './Legend'
 export {default as MoreStudentsIndicator} from './MoreStudentsIndicator'
 export {default as StatsInCard} from './StatsInCard'
+
+// Header
+export {default as Avatar} from './Avatar'
+export {default as Breadcrumbs} from './Breadcrumbs'
+export {default as Header} from './Header'
+export {default as AccountMenu} from './AccountMenu'

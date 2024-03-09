@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown } from "antd";
-import { Avatar, Space } from "antd";
+import { Avatar as AvatarComponent, Space } from "antd";
 
 const items = [
   {
@@ -12,7 +12,7 @@ const items = [
     label: <button>Вихід</button>,
   },
 ];
-const AvatarComponent = () => (
+const Avatar = () => (
   <>
     <Dropdown 
       
@@ -22,9 +22,9 @@ const AvatarComponent = () => (
       placement="bottomRight"
       arrow>
       <Space>
-        <Avatar className="cursor-pointer">Admin</Avatar>
+        <AvatarComponent className="cursor-pointer">Admin</AvatarComponent>
       </Space>
     </Dropdown>
   </>
 );
-export default AvatarComponent;
+export default Avatar;

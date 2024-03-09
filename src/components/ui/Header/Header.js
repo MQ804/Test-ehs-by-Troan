@@ -2,18 +2,20 @@
 
 import React from "react";
 import { Layout, theme } from "antd";
-import AccountMenu from "./notification-modal";
-import BreadcrumbComponent from "./breadcramp";
-import AvatarComponent from "./avatar";
+import {
+    Avatar,
+    Breadcrumbs,
+    AccountMenu,
+} from "@/components";
 import { Divider } from "antd";
-const { Header } = Layout;
+const { Header: HeaderComponent } = Layout;
 
-export default function HeaderComponents() {
+export default function Header() {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Header
+    <HeaderComponent
       className=""
       style={{
         padding: 0,
@@ -21,14 +23,14 @@ export default function HeaderComponents() {
       }}>
       <div className="mx-4 flex items-center ">
         <div className="mr-auto ">
-          <BreadcrumbComponent />
+          <Breadcrumbs />
         </div>
-        <AvatarComponent />
+        <Avatar />
         <div>
           <Divider type="vertical" className="bg-gray-300 h-[25px]" />
         </div>
         <AccountMenu />
       </div>
-    </Header>
+    </HeaderComponent>
   );
 }
