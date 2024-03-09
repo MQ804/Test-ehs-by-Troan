@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
-import AddGroupsForm from "@/components/ui/common/groups/add-groups-form";
+import {
+    AddGroupsForm,
+} from "@/components";
 import Button from "@mui/material/Button";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 
@@ -13,7 +15,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function AddGroups() {
+export default function AddGroupButton() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {

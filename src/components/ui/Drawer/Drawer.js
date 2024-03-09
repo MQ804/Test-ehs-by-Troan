@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Col, Divider, Drawer, Row } from "antd";
+import { Col, Divider, Drawer as DrawerComponent, Row } from "antd";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const DescriptionItem = ({ title, content }) => (
@@ -13,10 +13,10 @@ const DescriptionItem = ({ title, content }) => (
   </div>
 );
 
-const DrowerComponent = ({ onClose, open }) => {
+const Drawer = ({ onClose, open }) => {
   return (
     <>
-      <Drawer
+      <DrawerComponent
         width={640}
         placement="right"
         closable={false}
@@ -105,8 +105,8 @@ const DrowerComponent = ({ onClose, open }) => {
             />
           </Col>
         </Row>
-      </Drawer>
+      </DrawerComponent>
     </>
   );
 };
-export default DrowerComponent;
+export default Drawer;
