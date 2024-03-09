@@ -40,3 +40,9 @@ export {default as Main} from './Main'
 // Sidebar
 export {default as Menu} from './Menu'
 export {default as Sidebar} from './Sidebar'
+
+// Students
+export {default as AddStudents} from './AddStudents'
+export {default as AddStudentsForm} from './AddStudentsForm'
+export {default as SearchPanel} from './SearchPanel'
+export {default as StudentTable} from './StudentTable'

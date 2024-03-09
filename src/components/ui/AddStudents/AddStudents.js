@@ -9,7 +9,9 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
-import AddStudentsForm from './add-student-form';
+import {
+    AddStudentsForm,
+} from '@/components';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
