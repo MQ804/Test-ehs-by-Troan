@@ -1,6 +1,6 @@
-import LoginForm from "../ui/login-page/form-login";
-import IconWavesMove from "../ui/login-page/login-svg";
-import LogoInLoginPage from "../ui/login-page/logo-login";
+import LoginForm from "@/components/ui/login-page/form-login";
+import IconWavesMove from "@/components/ui/login-page/login-svg";
+import LogoInLoginPage from "@/components/ui/login-page/logo-login";
 
 
 export default function Login() {

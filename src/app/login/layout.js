@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import './login.module.css'
+import '@/styles/login.css'
 
 export const metadata = {
   title: "Create Next App",
