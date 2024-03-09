@@ -2,7 +2,7 @@ import React from "react";
 import { Breadcrumb } from "antd";
 import { usePathname } from "next/navigation";
 
-const Breadcrumbs = () => {
+export default function Breadcrumbs() {
   const paths = usePathname()
   const pathNames = paths.split('/').filter(path => path);
 
@@ -15,5 +15,3 @@ const Breadcrumbs = () => {
     </Breadcrumb>
   );
 };
-
-export default Breadcrumbs;

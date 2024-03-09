@@ -1,7 +1,5 @@
-const ColorPicker = () => {
+export default function ColorPicker() {
     return (
         <></>
     )
 }
-
-export default ColorPicker;

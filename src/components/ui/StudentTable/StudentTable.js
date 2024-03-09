@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import React, { useEffect, useState } from "react";
 import { Table } from "antd";
 import IconButton from "@mui/material/IconButton";
@@ -63,7 +64,7 @@ const columns = [
   },
 ];
 
-const StudentTable = () => {
+export default function StudentTable() {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [tableParams, setTableParams] = useState({
@@ -118,5 +119,3 @@ const StudentTable = () => {
     />
   );
 };
-
-export default StudentTable;

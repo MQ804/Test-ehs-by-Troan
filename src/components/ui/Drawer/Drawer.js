@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 import { Col, Divider, Drawer as DrawerComponent, Row } from "antd";
@@ -13,7 +13,7 @@ const DescriptionItem = ({ title, content }) => (
   </div>
 );
 
-const Drawer = ({ onClose, open }) => {
+export default function Drawer({ onClose, open }) {
   return (
     <>
       <DrawerComponent
@@ -109,4 +109,3 @@ const Drawer = ({ onClose, open }) => {
     </>
   );
 };
-export default Drawer;

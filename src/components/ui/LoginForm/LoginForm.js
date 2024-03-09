@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-const LoginForm = () => {
+export default function LoginForm() {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
@@ -62,5 +62,3 @@ const LoginForm = () => {
     </div>
   );
 };
-
-export default LoginForm;

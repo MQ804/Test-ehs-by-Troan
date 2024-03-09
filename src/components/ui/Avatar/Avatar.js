@@ -12,19 +12,19 @@ const items = [
     label: <button>Вихід</button>,
   },
 ];
-const Avatar = () => (
-  <>
-    <Dropdown 
-      
-      menu={{
-        items,
-      }}
-      placement="bottomRight"
-      arrow>
-      <Space>
-        <AvatarComponent className="cursor-pointer">Admin</AvatarComponent>
-      </Space>
-    </Dropdown>
-  </>
-);
-export default Avatar;
+export default function Avatar() {
+  return (
+      <>
+        <Dropdown
+            menu={{
+              items,
+            }}
+            placement="bottomRight"
+            arrow>
+          <Space>
+            <AvatarComponent className="cursor-pointer">Admin</AvatarComponent>
+          </Space>
+        </Dropdown>
+      </>
+  );
+};

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 import { Badge, Calendar as CalendarComponent } from "antd";
@@ -73,7 +73,7 @@ const getMonthData = (value) => {
   }
 };
 
-const Calendar = () => {
+export default function Calendar() {
   const monthCellRender = (value) => {
     const num = getMonthData(value);
     return num ? (
@@ -102,4 +102,3 @@ const Calendar = () => {
   };
   return <CalendarComponent cellRender={cellRender} />;
 };
-export default Calendar;

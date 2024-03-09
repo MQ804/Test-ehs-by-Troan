@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import React from "react";
 import { Badge, Calendar } from 'antd';
 const getListData = (value) => {
@@ -69,7 +70,7 @@ const getMonthData = (value) => {
     return 1394;
   }
 };
-const App = () => {
+export default function App() {
   const monthCellRender = (value) => {
     const num = getMonthData(value);
     return num ? (
@@ -98,4 +99,3 @@ const App = () => {
   };
   return <Calendar cellRender={cellRender} />;
 };
-export default App;

@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
 import React, { useEffect, useState, useRef } from "react";
 import Chart from "chart.js/auto";
 
-const Diagrams = () => {
+export default function Diagrams() {
   const [groups, setGroups] = useState([]);
   const chartRef = useRef(null);
 
@@ -77,5 +77,3 @@ const Diagrams = () => {
     </div>
   );
 };
-
-export default Diagrams;
