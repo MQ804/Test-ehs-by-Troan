@@ -18,7 +18,7 @@ const menuItems = [
   {
     title: "Головна",
     icon: <HomeOutlinedIcon style={{ color: "white" }} />,
-    path: "/",
+    path: "/dashboard",
   },
   {
     title: "Групи",
