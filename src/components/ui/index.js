@@ -31,7 +31,6 @@ export {default as StatsInCard} from './StatsInCard'
 // Header
 export {default as Avatar} from './Avatar'
 export {default as Breadcrumbs} from './Breadcrumbs'
-export {default as Header} from './Header'
 export {default as AccountMenu} from './AccountMenu'
 
 // Main
@@ -39,7 +38,6 @@ export {default as Main} from './Main'
 
 // Sidebar
 export {default as Menu} from './Menu'
-export {default as Sidebar} from './Sidebar'
 
 // Students
 export {default as AddStudents} from './AddStudents'
