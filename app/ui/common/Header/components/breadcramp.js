@@ -1,15 +1,15 @@
 import React from "react";
 import { Breadcrumb } from "antd";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const BreadcrumbComponent = () => {
-  const router = useRouter();
-  const pathSegments = router.asPath.split("/").filter((segment) => segment);
+  const paths = usePathname()
+  const pathNames = paths.split('/').filter(path => path);
 
   return (
     <Breadcrumb>
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-      {pathSegments.map((segment, index) => (
+      {pathNames.map((segment, index) => (
         <Breadcrumb.Item key={index}>{segment}</Breadcrumb.Item>
       ))}
     </Breadcrumb>
