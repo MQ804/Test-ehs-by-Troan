@@ -1,6 +1,6 @@
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 
-export default function LogoInLoginPage() {
+export default function LoginLogo() {
   return (
     <div>
       <h1 className="text-red-500 font-['Raleway'] text-7xl text-center ">
