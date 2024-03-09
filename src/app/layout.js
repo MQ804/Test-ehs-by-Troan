@@ -3,8 +3,8 @@ import "@/styles/globals.css";
 import {
   Header,
   Main,
+  Sidebar,
 } from "@/components";
-import SiderComponents from "@/components/ui/common/Sider/Sider";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-[#f5f5f5]">
-        <SiderComponents />
+        <Sidebar />
         <div className="ml-[200px]">
           <Header />
           <Main children={children} />

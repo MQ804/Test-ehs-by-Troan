@@ -35,5 +35,8 @@ export {default as Header} from './Header'
 export {default as AccountMenu} from './AccountMenu'
 
 // Main
-
 export {default as Main} from './Main'
+
+// Sidebar
+export {default as Menu} from './Menu'
+export {default as Sidebar} from './Sidebar'
