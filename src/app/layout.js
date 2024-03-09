@@ -1,9 +1,9 @@
 import React from "react";
-import "./globals.css";
-import HeaderComponents from "./ui/common/Header/components/Header";
+import "@/styles/globals.css";
+import HeaderComponents from "@/components/ui/common/Header/components/Header";
 // import FooterComponent from "./ui/common/Footer/Footer";
-import Main from "./ui/common/Main/Main";
-import SiderComponents from "./ui/common/Sider/Sider";
+import Main from "@/components/ui/common/Main/Main";
+import SiderComponents from "@/components/ui/common/Sider/Sider";
 
 export const metadata = {
   title: "Create Next App",
