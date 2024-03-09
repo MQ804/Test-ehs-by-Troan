@@ -1,20 +1,22 @@
 import React from "react";
-import CardList from "@/components/ui/common/dashboard/card-list";
-import DiagramsCards from "@/components/ui/common/dashboard/diagrams-card";
-import CardTarget from "@/components/ui/common/dashboard/card-target";
-import ProgressCircul from "@/components/ui/common/dashboard/progres-circul";
-import TopTeacherList from "@/components/ui/common/dashboard/teacher-top-list";
+import {
+    CardList,
+    CardTarget,
+    DiagramsCard,
+    ProgressCircul,
+    TeacherTopList,
+} from "@/components";
 
-const Admin = () => {
+const Page = () => {
   return (
       <div>
         <div className=" flex mb-5">
           <CardList />
-          <TopTeacherList />
+          <TeacherTopList />
         </div>
 
         <div className="flex justify-start gap-5 align-center">
-          <DiagramsCards />
+          <DiagramsCard />
           <div className="flex  justify-start flex-col">
             <CardTarget />
             <div className="mt-5">
@@ -26,4 +28,4 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default Page;

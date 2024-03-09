@@ -9,7 +9,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import cn from "classnames";
 
-export default function BasicCard() {
+export default function CardTarget() {
   const [groups, setGroups] = useState([]);
 
   useEffect(() => {

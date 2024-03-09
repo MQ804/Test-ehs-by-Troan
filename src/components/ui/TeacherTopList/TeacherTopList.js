@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
-export default function TopTeacherList() {
+export default function TeacherTopList() {
   const [teachers, setTeacher] = useState([]);
 
   useEffect(() => {

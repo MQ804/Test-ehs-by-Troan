@@ -22,7 +22,7 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (login === "ADMIN" && password === "1234") {
-      router.push("/admin");
+      router.push("/dashboard");
     } else if (login === "Anna" && password === "5678") {
       router.push("/teacher");
     } else {

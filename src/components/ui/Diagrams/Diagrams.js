@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Chart from "chart.js/auto";
 
-const ChartComponent = () => {
+const Diagrams = () => {
   const [groups, setGroups] = useState([]);
   const chartRef = useRef(null);
 
@@ -78,4 +78,4 @@ const ChartComponent = () => {
   );
 };
 
-export default ChartComponent;
+export default Diagrams;
