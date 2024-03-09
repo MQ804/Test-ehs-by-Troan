@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ColorToggleButton from "@/components/ui/common/groups/filter-btn";
 import AddGroups from "@/components/ui/common/groups/add-button";
 import GroupsCardsList from "@/components/ui/common/groups/groups-card-list";

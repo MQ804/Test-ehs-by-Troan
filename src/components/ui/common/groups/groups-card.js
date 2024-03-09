@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { experimentalStyled as styled } from "@mui/material/styles";
-import { Button, List, ListItem, Typography } from "@mui/material";
+import { List, ListItem, Typography } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
 import SimpleDialog from "./icon-click";
 import MoreStudentsIndicator from "./more-students-indicator";
