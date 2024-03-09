@@ -1,6 +1,6 @@
-"use client"
+'use client';
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {
   Button,
   FormControl,
@@ -11,26 +11,26 @@ import {
   Select,
   TextField,
   FormControlLabel,
-} from "@mui/material";
+} from '@mui/material';
 
 export default function AddGroupsForm() {
   const [teachers, setTeachers] = useState([]);
-  const [selectedTeacher, setSelectedTeacher] = useState("");
-  const [groupName, setGroupName] = useState("");
-  const [groupType, setGroupType] = useState("offline");
+  const [selectedTeacher, setSelectedTeacher] = useState('');
+  const [groupName, setGroupName] = useState('');
+  const [groupType, setGroupType] = useState('offline');
   const [formErrors, setFormErrors] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/data/teachers");
+        const response = await fetch('/api/data/teachers');
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error('Network response was not ok');
         }
         const responseData = await response.json();
         setTeachers(responseData);
       } catch (error) {
-        console.error("There was a problem fetching the data:", error);
+        console.error('There was a problem fetching the data:', error);
       }
     };
     fetchData();
@@ -42,7 +42,7 @@ export default function AddGroupsForm() {
     if (!groupName.trim()) {
       errors.groupName = "Назва групи обов'язкова";
     } else if (specialChars.test(groupName)) {
-      errors.groupName = "Тільки латиниця і цифри";
+      errors.groupName = 'Тільки латиниця і цифри';
     }
     if (!selectedTeacher) {
       errors.selectedTeacher = "Вибір викладача обов'язковий";
@@ -55,9 +55,9 @@ export default function AddGroupsForm() {
     event.preventDefault();
     if (validateForm()) {
       // отправить данные формы
-      console.log("Form is valid. Submitting...");
+      console.log('Form is valid. Submitting...');
     } else {
-      console.log("Form is invalid. Please correct errors.");
+      console.log('Form is invalid. Please correct errors.');
     }
   };
 
@@ -81,7 +81,8 @@ export default function AddGroupsForm() {
           defaultValue="offline"
           name="radio-buttons-group"
           value={groupType}
-          onChange={(e) => setGroupType(e.target.value)}>
+          onChange={(e) => setGroupType(e.target.value)}
+        >
           <FormControlLabel value="online" control={<Radio />} label="Online" />
           <FormControlLabel
             value="offline"
@@ -97,7 +98,8 @@ export default function AddGroupsForm() {
           value={selectedTeacher}
           onChange={(e) => setSelectedTeacher(e.target.value)}
           error={!!formErrors.selectedTeacher}
-          displayEmpty>
+          displayEmpty
+        >
           <MenuItem disabled value="">
             <em>Виберіть викладача *</em>
           </MenuItem>

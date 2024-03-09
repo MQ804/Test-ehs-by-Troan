@@ -1,66 +1,64 @@
-"use client"
+'use client';
 
-import React, { useEffect, useState } from "react";
-import { Table } from "antd";
-import IconButton from "@mui/material/IconButton";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
+import React, { useEffect, useState } from 'react';
+import { Table } from 'antd';
+import IconButton from '@mui/material/IconButton';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const columns = [
   {
-    title: "Імя",
-    dataIndex: "name",
+    title: 'Імя',
+    dataIndex: 'name',
     render: (name) => `${name}`,
     // width: '20%',
   },
   {
-    title: "Контакти",
-    dataIndex: "contacts",
+    title: 'Контакти',
+    dataIndex: 'contacts',
     render: (name) => `${name}`,
   },
   {
-    title: "Вік",
-    dataIndex: "age",
+    title: 'Вік',
+    dataIndex: 'age',
     render: (name) => `${name}`,
   },
   {
-    title: "Група",
-    dataIndex: "group",
+    title: 'Група',
+    dataIndex: 'group',
     render: (name) => `${name}`,
   },
   {
-    title: "Тариф",
-    dataIndex: "tariff",
+    title: 'Тариф',
+    dataIndex: 'tariff',
 
     render: (name) => `${name}`,
   },
   {
-    title: "Кількість занять",
-    dataIndex: "allLessons",
+    title: 'Кількість занять',
+    dataIndex: 'allLessons',
 
     render: (name) => `${name}`,
   },
   {
-    title: "Відвіданих занять",
-    dataIndex: "checkLessons",
+    title: 'Відвіданих занять',
+    dataIndex: 'checkLessons',
     render: (name) => `${name}`,
   },
   {
-    title: "Можливості",
-    dataIndex: "",
-    key: "x",
-    render: () => {
-      return (
-        <div>
-          <IconButton aria-label="delete" color="primary">
-            <EditIcon />
-          </IconButton>
-          <IconButton aria-label="delete" color="primary">
-            <DeleteIcon />
-          </IconButton>
-        </div>
-      );
-    },
+    title: 'Можливості',
+    dataIndex: '',
+    key: 'x',
+    render: () => (
+      <div>
+        <IconButton aria-label="delete" color="primary">
+          <EditIcon />
+        </IconButton>
+        <IconButton aria-label="delete" color="primary">
+          <DeleteIcon />
+        </IconButton>
+      </div>
+    ),
   },
 ];
 
@@ -77,9 +75,9 @@ export default function StudentTable() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/data/students");
+        const response = await fetch('/api/data/students');
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error('Network response was not ok');
         }
         const studentsData = await response.json();
         setStudents(studentsData);
@@ -92,7 +90,7 @@ export default function StudentTable() {
           },
         }));
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error('Error fetching data:', error);
         setLoading(false);
       }
     };
@@ -118,4 +116,4 @@ export default function StudentTable() {
       onChange={handleTableChange}
     />
   );
-};
+}

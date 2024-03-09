@@ -1,1 +1,1 @@
-export {default} from './AddGroupButton'
+export { default } from './AddGroupButton';

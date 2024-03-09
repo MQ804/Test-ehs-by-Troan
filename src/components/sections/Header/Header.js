@@ -1,13 +1,13 @@
-"use client"
+'use client';
 
-import React from "react";
-import { Layout, theme } from "antd";
+import React from 'react';
+import { Layout, theme, Divider } from 'antd';
 import {
-    Avatar,
-    Breadcrumbs,
-    AccountMenu,
-} from "@/components";
-import { Divider } from "antd";
+  Avatar,
+  Breadcrumbs,
+  AccountMenu,
+} from '@/components';
+
 const { Header: HeaderComponent } = Layout;
 
 export default function Header() {
@@ -20,7 +20,8 @@ export default function Header() {
       style={{
         padding: 0,
         background: colorBgContainer,
-      }}>
+      }}
+    >
       <div className="mx-4 flex items-center ">
         <div className="mr-auto ">
           <Breadcrumbs />

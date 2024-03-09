@@ -1,1 +1,1 @@
-export {default} from './breadcramp'
+export { default } from './breadcramp';

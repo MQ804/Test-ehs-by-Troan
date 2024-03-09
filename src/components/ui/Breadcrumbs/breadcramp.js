@@ -1,10 +1,10 @@
-import React from "react";
-import { Breadcrumb } from "antd";
-import { usePathname } from "next/navigation";
+import React from 'react';
+import { Breadcrumb } from 'antd';
+import { usePathname } from 'next/navigation';
 
 export default function Breadcrumbs() {
-  const paths = usePathname()
-  const pathNames = paths.split('/').filter(path => path);
+  const paths = usePathname();
+  const pathNames = paths.split('/').filter((path) => path);
 
   return (
     <Breadcrumb>
@@ -14,4 +14,4 @@ export default function Breadcrumbs() {
       ))}
     </Breadcrumb>
   );
-};
+}

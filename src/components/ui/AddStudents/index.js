@@ -1,1 +1,1 @@
-export {default} from './AddStudents'
+export { default } from './AddStudents';

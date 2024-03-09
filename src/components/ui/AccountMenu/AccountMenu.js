@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -25,11 +25,11 @@ export default function AccountMenu() {
     setAnchorEl(null);
   };
   return (
-    <React.Fragment>
-      <Box sx={{  alignItems: 'center', textAlign: 'center' }}>
-        
+    <>
+      <Box sx={{ alignItems: 'center', textAlign: 'center' }}>
+
         <Tooltip title="Notification">
-        
+
           <IconButton
             onClick={handleClick}
             size="small"
@@ -39,12 +39,12 @@ export default function AccountMenu() {
             aria-expanded={open ? 'true' : undefined}
           >
             <Badge badgeContent={4} color="primary">
-                <NotificationsIcon sx={{ width: 28, height: 28 }}/>
-            </Badge>    
+              <NotificationsIcon sx={{ width: 28, height: 28 }} />
+            </Badge>
           </IconButton>
-       
+
         </Tooltip>
-       
+
       </Box>
       <Menu
         anchorEl={anchorEl}
@@ -82,10 +82,14 @@ export default function AccountMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem onClick={handleClose}>
-          <Avatar /> У студента закінчується термін договору, сповістити його ? 
+          <Avatar />
+          {' '}
+          У студента закінчується термін договору, сповістити його ?
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Avatar /> My account
+          <Avatar />
+          {' '}
+          My account
         </MenuItem>
         <Divider />
         <MenuItem onClick={handleClose}>
@@ -107,6 +111,6 @@ export default function AccountMenu() {
           Logout
         </MenuItem>
       </Menu>
-    </React.Fragment>
+    </>
   );
 }

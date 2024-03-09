@@ -1,1 +1,1 @@
-export {default} from './AddStudentsForm'
+export { default } from './AddStudentsForm';

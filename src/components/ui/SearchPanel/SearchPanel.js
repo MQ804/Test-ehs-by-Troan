@@ -1,12 +1,12 @@
-"use client"
+'use client';
 
-import * as React from "react";
-import { useState } from "react";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
+import * as React from 'react';
+import { useState } from 'react';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 
 export default function SearchPanel({ students, onSearch }) {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
 
   const handleSearchChange = (event, newValue) => {
     setSearchValue(newValue);

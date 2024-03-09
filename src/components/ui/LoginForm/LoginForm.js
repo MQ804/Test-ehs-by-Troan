@@ -1,14 +1,14 @@
-"use client"
+'use client';
 
-import React, { useState } from "react";
-import { useRouter } from "next/navigation";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 export default function LoginForm() {
-  const [login, setLogin] = useState("");
-  const [password, setPassword] = useState("");
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
   const router = useRouter();
 
   const handleLoginChange = (e) => {
@@ -21,12 +21,12 @@ export default function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (login === "ADMIN" && password === "1234") {
-      router.push("/dashboard");
-    } else if (login === "Anna" && password === "5678") {
-      router.push("/teacher");
+    if (login === 'ADMIN' && password === '1234') {
+      router.push('/dashboard');
+    } else if (login === 'Anna' && password === '5678') {
+      router.push('/teacher');
     } else {
-      console.log("Неверные учетные данные");
+      console.log('Неверные учетные данные');
     }
   };
 
@@ -61,4 +61,4 @@ export default function LoginForm() {
       </form>
     </div>
   );
-};
+}

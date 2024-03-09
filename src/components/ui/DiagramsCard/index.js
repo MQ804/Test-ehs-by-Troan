@@ -1,1 +1,1 @@
-export {default} from './DiagramsCard'
+export { default } from './DiagramsCard';

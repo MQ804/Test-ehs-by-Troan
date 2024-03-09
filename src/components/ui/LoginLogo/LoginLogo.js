@@ -1,4 +1,4 @@
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 export default function LoginLogo() {
   return (

@@ -1,21 +1,21 @@
-"use client"
+'use client';
 
-import React, { useState, useEffect } from "react";
-import TextField from "@mui/material/TextField";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
+import React, { useState, useEffect } from 'react';
+import TextField from '@mui/material/TextField';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 // import api from "@/components/utils/api";
 
 export default function AddStudentsForm() {
-  const [login, setLogin] = useState("");
-  const [groupType, setGroupType] = useState("online");
-  const [selectedTeacher, setSelectedTeacher] = useState("");
+  const [login, setLogin] = useState('');
+  const [groupType, setGroupType] = useState('online');
+  const [selectedTeacher, setSelectedTeacher] = useState('');
   const [teachers, setTeachers] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function AddStudentsForm() {
         const teachersData = await api.getTeachers();
         setTeachers(teachersData);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error('Error fetching data:', error);
       }
     };
 
@@ -64,7 +64,8 @@ export default function AddStudentsForm() {
               id="demo-simple-select"
               value={selectedTeacher}
               label="Викладач"
-              onChange={handleTeacherChange}>
+              onChange={handleTeacherChange}
+            >
               {teachers.map((teacher) => (
                 <MenuItem key={teacher.id} value={teacher.id}>
                   {teacher.name}
@@ -84,7 +85,8 @@ export default function AddStudentsForm() {
             aria-labelledby="demo-row-radio-buttons-group-label"
             name="row-radio-buttons-group"
             value={groupType}
-            onChange={handleGroupTypeChange}>
+            onChange={handleGroupTypeChange}
+          >
             <FormControlLabel
               value="online"
               control={<Radio />}
@@ -121,4 +123,4 @@ export default function AddStudentsForm() {
       </form>
     </div>
   );
-};
+}

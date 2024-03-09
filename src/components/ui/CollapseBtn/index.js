@@ -1,1 +1,1 @@
-export {default} from './CollapseBtn'
+export { default } from './CollapseBtn';

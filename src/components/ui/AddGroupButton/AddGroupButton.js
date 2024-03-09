@@ -1,20 +1,18 @@
-"use client"
+'use client';
 
-import React from "react";
+import React from 'react';
+import Button from '@mui/material/Button';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
+
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import Slide from '@mui/material/Slide';
 import {
-    AddGroupsForm,
-} from "@/components";
-import Button from "@mui/material/Button";
-import GroupAddIcon from "@mui/icons-material/GroupAdd";
+  AddGroupsForm,
+} from '@/components';
 
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import Slide from "@mui/material/Slide";
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+const Transition = React.forwardRef((props, ref) => <Slide direction="up" ref={ref} {...props} />);
 
 export default function AddGroupButton() {
   const [open, setOpen] = React.useState(false);
@@ -32,7 +30,8 @@ export default function AddGroupButton() {
         variant="outlined"
         color="primary"
         startIcon={<GroupAddIcon />}
-        onClick={handleClickOpen}>
+        onClick={handleClickOpen}
+      >
         Створити групу
       </Button>
       <Dialog
@@ -40,11 +39,12 @@ export default function AddGroupButton() {
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description">
+        aria-describedby="alert-dialog-slide-description"
+      >
         <DialogContent>
           <AddGroupsForm />
         </DialogContent>
-        <DialogActions></DialogActions>
+        <DialogActions />
       </Dialog>
     </>
   );

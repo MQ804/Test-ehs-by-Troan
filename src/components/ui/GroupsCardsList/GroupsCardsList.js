@@ -1,12 +1,12 @@
-"use client"
+'use client';
 
-import * as React from "react";
-import { useState, useEffect } from "react";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+import * as React from 'react';
+import { useState, useEffect } from 'react';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import {
   GroupCard,
-} from "@/components";
+} from '@/components';
 
 export default function GroupsCardsList() {
   const [groups, setGroups] = useState([]);
@@ -14,14 +14,14 @@ export default function GroupsCardsList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/data/groups");
+        const response = await fetch('/api/data/groups');
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error('Network response was not ok');
         }
         const responseData = await response.json();
         setGroups(responseData);
       } catch (error) {
-        console.error("There was a problem fetching the data:", error);
+        console.error('There was a problem fetching the data:', error);
       }
     };
     fetchData();
@@ -36,13 +36,12 @@ export default function GroupsCardsList() {
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}>
-        {groups.length > 0 &&
-          groups.map((item) => {
-            return (
-              <GroupCard item={item} key={item.id} onDelete={deleteGroup} />
-            );
-          })}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        {groups.length > 0
+          && groups.map((item) => (
+            <GroupCard item={item} key={item.id} onDelete={deleteGroup} />
+          ))}
       </Grid>
     </Box>
   );

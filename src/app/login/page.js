@@ -1,8 +1,8 @@
 import {
-    IconWavesMove,
-    LoginLogo,
-    LoginForm,
-} from "@/components";
+  IconWavesMove,
+  LoginLogo,
+  LoginForm,
+} from '@/components';
 
 export default function Login() {
   return (

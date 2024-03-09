@@ -1,19 +1,21 @@
-"use client"
+'use client';
 
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import Button from "@mui/material/Button";
-import DialogTitle from "@mui/material/DialogTitle";
-import Dialog from "@mui/material/Dialog";
-import IconButton from "@mui/material/IconButton";
-import Stack from "@mui/material/Stack";
-import DeleteIcon from "@mui/icons-material/Delete";
-import { Edit } from "@mui/icons-material";
-import { DialogActions } from "@mui/material";
-import TextField from "@mui/material/TextField"; // Добавляем импорт для TextField
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import Button from '@mui/material/Button';
+import DialogTitle from '@mui/material/DialogTitle';
+import Dialog from '@mui/material/Dialog';
+import IconButton from '@mui/material/IconButton';
+import Stack from '@mui/material/Stack';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { Edit } from '@mui/icons-material';
+import { DialogActions } from '@mui/material';
+import TextField from '@mui/material/TextField'; // Добавляем импорт для TextField
 
 function SimpleDialog(props) {
-  const { onClose, open, groupId, onDelete } = props;
+  const {
+    onClose, open, groupId, onDelete,
+  } = props;
 
   const handleClose = () => {
     onClose();
@@ -27,20 +29,25 @@ function SimpleDialog(props) {
   return (
     <Dialog onClose={handleClose} open={open}>
       <DialogTitle>
-        Ви впевненні що хочете <span className="text-red-500">видалити</span>{" "}
+        Ви впевненні що хочете
+        {' '}
+        <span className="text-red-500">видалити</span>
+        {' '}
         групу ?
       </DialogTitle>
       <DialogActions>
         <Button
           onClick={handleDelete}
           variant="outlined"
-          className="bg-red-500 hover:bg-red-600 text-white">
+          className="bg-red-500 hover:bg-red-600 text-white"
+        >
           Так
         </Button>
         <Button
           onClick={handleClose}
           variant="outlined"
-          className="bg-sky-500 hover:bg-sky-600 text-white">
+          className="bg-sky-500 hover:bg-sky-600 text-white"
+        >
           Ні
         </Button>
       </DialogActions>
@@ -58,8 +65,8 @@ SimpleDialog.propTypes = {
 export default function SimpleDialogDemo({ groupId, onDelete }) {
   const [open, setOpen] = React.useState(false);
   const [isEditing, setIsEditing] = useState(false); // Добавляем состояние для режима редактирования
-  const [groupName, setGroupName] = useState(""); // Добавляем состояние для имени группы
-  const [teacherName, setTeacherName] = useState(""); // Добавляем состояние для имени учителя
+  const [groupName, setGroupName] = useState(''); // Добавляем состояние для имени группы
+  const [teacherName, setTeacherName] = useState(''); // Добавляем состояние для имени учителя
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -81,7 +88,8 @@ export default function SimpleDialogDemo({ groupId, onDelete }) {
       <IconButton
         aria-label="edit"
         color="primary"
-        onClick={() => setIsEditing(!isEditing)}>
+        onClick={() => setIsEditing(!isEditing)}
+      >
         <Edit />
       </IconButton>
       <IconButton aria-label="delete" color="primary" onClick={handleClickOpen}>
@@ -109,7 +117,8 @@ export default function SimpleDialogDemo({ groupId, onDelete }) {
           <Button
             onClick={handleSaveChanges}
             variant="outlined"
-            className="bg-blue-500 hover:bg-blue-600 text-white ml-2">
+            className="bg-blue-500 hover:bg-blue-600 text-white ml-2"
+          >
             Сохранить
           </Button>
         </>

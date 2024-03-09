@@ -1,7 +1,8 @@
-"use client"
+'use client';
 
-import React from "react";
+import React from 'react';
 import { Badge, Calendar } from 'antd';
+
 const getListData = (value) => {
   let listData;
   switch (value.date()) {
@@ -98,4 +99,4 @@ export default function App() {
     return info.originNode;
   };
   return <Calendar cellRender={cellRender} />;
-};
+}
