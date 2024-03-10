@@ -1,1 +1,1 @@
-export {default} from './CardTarget'
+export { default as CardTarget } from './CardTarget';

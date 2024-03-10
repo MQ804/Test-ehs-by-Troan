@@ -1,1 +1,1 @@
-export {default} from './AddGroupsForm'
+export { default as AddGroupsForm } from './AddGroupsForm';

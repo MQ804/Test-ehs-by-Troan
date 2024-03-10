@@ -1,1 +1,1 @@
-export {default as IconWavesMove} from './IconWavesMove';
+export { default as IconWavesMove } from './IconWavesMove';

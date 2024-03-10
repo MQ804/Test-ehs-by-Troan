@@ -1,1 +1,1 @@
-export {default} from './StatsInCard'
+export { default as StatsInCard } from './StatsInCard';

@@ -1,1 +1,1 @@
-export {default} from './ProgressCircul'
+export { default as ProgressCircul } from './ProgressCircul';

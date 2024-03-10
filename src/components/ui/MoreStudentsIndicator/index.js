@@ -1,1 +1,1 @@
-export {default} from './MoreStudentsIndicator'
+export { default as MoreStudentsIndicator } from './MoreStudentsIndicator';

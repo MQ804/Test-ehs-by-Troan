@@ -1,1 +1,1 @@
-export {default} from './TeacherTopList'
+export { default as TeacherTopList } from './TeacherTopList';
