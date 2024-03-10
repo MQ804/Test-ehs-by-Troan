@@ -18,7 +18,8 @@ export default function SearchPanel({ students, onSearch }) {
       disablePortal
       id="combo-box-demo"
       sx={{ width: 300 }}
-      options={students.map((student) => student.name)} // Опции для автозаполнения - имена студентов
+      // Опции для автозаполнения - имена студентов
+      options={students.map((student) => student.name)}
       renderInput={(params) => (
         <TextField
           {...params}

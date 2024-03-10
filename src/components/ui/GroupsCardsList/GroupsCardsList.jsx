@@ -4,9 +4,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import {
-  GroupCard,
-} from '@/components';
+import { GroupCard } from '@/components';
 
 export default function GroupsCardsList() {
   const [groups, setGroups] = useState([]);

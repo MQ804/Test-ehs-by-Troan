@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
 import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
@@ -55,18 +54,14 @@ function SimpleDialog(props) {
   );
 }
 
-SimpleDialog.propTypes = {
-  onClose: PropTypes.func.isRequired,
-  open: PropTypes.bool.isRequired,
-  groupId: PropTypes.number.isRequired,
-  onDelete: PropTypes.func.isRequired,
-};
-
 export default function SimpleDialogDemo({ groupId, onDelete }) {
   const [open, setOpen] = React.useState(false);
-  const [isEditing, setIsEditing] = useState(false); // Добавляем состояние для режима редактирования
-  const [groupName, setGroupName] = useState(''); // Добавляем состояние для имени группы
-  const [teacherName, setTeacherName] = useState(''); // Добавляем состояние для имени учителя
+  // Добавляем состояние для режима редактирования
+  const [isEditing, setIsEditing] = useState(false);
+  // Добавляем состояние для имени группы
+  const [groupName, setGroupName] = useState('');
+  // Добавляем состояние для имени учителя
+  const [teacherName, setTeacherName] = useState('');
 
   const handleClickOpen = () => {
     setOpen(true);

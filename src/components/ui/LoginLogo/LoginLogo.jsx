@@ -1,3 +1,4 @@
+import React from 'react';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 export default function LoginLogo() {

@@ -1,1 +1,1 @@
-export { default } from './AddStudents';
+export { default as AddStudents } from './AddStudents';

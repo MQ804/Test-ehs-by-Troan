@@ -1,1 +1,1 @@
-export { default } from './Diagrams';
+export { default as Diagrams } from './Diagrams';
